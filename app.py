@@ -1081,14 +1081,8 @@ iframe[height="0"] { display: none !important; }
 .commute-row-gold:hover { box-shadow: 0 8px 32px rgba(245,158,11,0.22); }
 .commute-row-gold .cr-rank { color: #FCD34D; font-size: 1.1rem; }
 /* ── Improve subtitle / caption contrast globally ── */
-.stCaption,
-[data-testid="stCaption"] {
-    color: #CBD5E1 !important;  /* lighter gray (high contrast) */
-    opacity: 0.95 !important;
-}
-
-/* Ensure markdown paragraph text is readable */
-section.main [data-testid="stMarkdownContainer"] p {
+section.main .stCaption,
+section.main [data-testid="stCaption"] {
     color: #E2E8F0 !important;
 }
 </style>""", unsafe_allow_html=True)
