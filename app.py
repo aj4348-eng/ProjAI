@@ -1956,7 +1956,7 @@ with tabs[5]:
                 st.plotly_chart(fig, use_container_width=True)
 
         show = [c for c in ['title', 'price', 'borough', 'bedrooms', 'sqft', 'no_fee', 'sentiment_label', 'source'] if c in ls.columns]
-        st.dataframe(ls[show].head(50).rename(columns={'title': 'location'}), hide_index=True, use_container_width=True)
+        st.dataframe(ls[show].head(50).rename(columns={'title': 'listing'}), hide_index=True, use_container_width=True)
     else:
         st.info("No listing data.")
 
